@@ -8,6 +8,8 @@ import Forum from "../components/forum";
 
 export default function App (){
 
+  console.log("process.env : ", process.env.HOST)
+
   return (
 
     <div>
