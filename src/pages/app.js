@@ -6,9 +6,9 @@ import React, {StrictMode} from "react";
 // import RequireAuth from "../components/authentication/RequireAuth";
 // import Forum from "../components/forum";
 
-export default function App (){
+export function App (){
 
-  // console.log("process.env : ", process.env.HOST)
+  console.log("process.env : ", process.env.NODE_ENV)
 
   return (
 
@@ -30,8 +30,4 @@ export default function App (){
   )
 }
 
-ReactDOM.render(
-      <App />
-,
-  document.getElementById("root")
-);
+ReactDOM.render(<App />, document.getElementById("root"));
