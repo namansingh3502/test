@@ -9,17 +9,22 @@ import Forum from "../components/forum";
 export default function App (){
 
   return (
-    <Routes>
-      <Route path="login/" element={<Login />} />
-      <Route
-        path="/*"
-        element={
-          <RequireAuth>
-            <Forum />
-          </RequireAuth>
-        }
-      />
-    </Routes>
+
+    <div>
+      Forum 
+    </div>
+
+    // <Routes>
+    //   <Route path="login/" element={<Login />} />
+    //   <Route
+    //     path="/*"
+    //     element={
+    //       <RequireAuth>
+    //         <Forum />
+    //       </RequireAuth>
+    //     }
+    //   />
+    // </Routes>
   )
 }
 
