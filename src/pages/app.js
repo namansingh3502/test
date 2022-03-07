@@ -8,7 +8,7 @@ import Forum from "../components/forum";
 
 export default function App (){
 
-  console.log("process.env : ", process.env.HOST)
+  // console.log("process.env : ", process.env.HOST)
 
   return (
 
@@ -31,10 +31,11 @@ export default function App (){
 }
 
 ReactDOM.render(
-  <StrictMode>
-    <BrowserRouter>
+  {/*<StrictMode>
+    <BrowserRouter>*/}
       <App />
-    </BrowserRouter>
-  </StrictMode>,
+  {/*  </BrowserRouter>
+  </StrictMode>*/}
+  ,
   document.getElementById("root")
 );
