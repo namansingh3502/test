@@ -6,28 +6,18 @@ import React, {StrictMode} from "react";
 // import RequireAuth from "../components/authentication/RequireAuth";
 // import Forum from "../components/forum";
 
-export function App (){
-
-  // console.log("process.env : ", process.env.NODE_ENV)
+export default function App (){
 
   return (
-
-    <div>
-      Forum 
-    </div>
-
-    // <Routes>
-    //   <Route path="login/" element={<Login />} />
-    //   <Route
-    //     path="/*"
-    //     element={
-    //       <RequireAuth>
-    //         <Forum />
-    //       </RequireAuth>
-    //     }
-    //   />
-    // </Routes>
+    <div className={"text-white"}>Forum</div>
   )
 }
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  <StrictMode>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </StrictMode>,
+  document.getElementById("root")
+);
