@@ -8,7 +8,7 @@ import React, {StrictMode} from "react";
 
 export function App (){
 
-  console.log("process.env : ", process.env.NODE_ENV)
+  // console.log("process.env : ", process.env.NODE_ENV)
 
   return (
 
